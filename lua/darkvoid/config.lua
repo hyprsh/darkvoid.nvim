@@ -9,6 +9,7 @@ local function load_plugins(colors, config)
 		"telescope",
 		"lualine",
 		"bufferline",
+		"ministatusline"
 		-- more plugins can be added here
 	}
 
