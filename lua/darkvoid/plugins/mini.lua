@@ -4,17 +4,24 @@ M.setup = function()
 	local colors = require("darkvoid.colors").config.colors
 
 	local highlight_groups = {
-		MiniStatuslineModeNormal = { fg = colors.added, bg = "NONE" },
-		MiniStatuslineModeInsert = { fg = colors.search_highlight, bg = "NONE" },
-		MiniStatuslineModeVisual = { fg = colors.title, bg = "NONE" },
-		MiniStatuslineModeCommand = { fg = colors.search_highlight, bg = "NONE" },
-		MiniStatuslineModeOther = { fg = colors.eob, bg = "NONE" },
-		MiniStatuslineDevinfo = { fg = colors.type, bg = "NONE" },
-		MiniStatuslineFilename = { fg = colors.bracket, bg = "NONE" },
-		MiniStatuslineFileinfo = { fg = colors.bool, bg = "NONE" },
-		MiniNotifyBorder = { fg = colors.border, bg = "NONE" },
+		MiniStatuslineModeNormal = { fg = colors.added, bg = colors.bg },
+		MiniStatuslineModeInsert = { fg = colors.search_highlight, bg = colors.bg },
+		MiniStatuslineModeVisual = { fg = colors.title, bg = colors.bg },
+		MiniStatuslineModeCommand = { fg = colors.search_highlight, bg = colors.bg },
+		MiniStatuslineModeOther = { fg = colors.eob, bg = colors.bg },
+		MiniStatuslineDevinfo = { fg = colors.type, bg = colors.bg },
+		MiniStatuslineFilename = { fg = colors.bracket, bg = colors.bg },
+		MiniStatuslineFileinfo = { fg = colors.bool, bg = colors.bg },
+		MiniNotifyBorder = { fg = colors.border, bg = colors.bg },
 		MiniNotifyNormal = { fg = colors.fg, bg = colors.bg },
-		MiniNotifyTitle = { fg = colors.fg, bg = "NONE" },
+		MiniNotifyTitle = { fg = colors.fg, bg = colors.bg },
+		MiniClueBorder = { fg = colors.border, bg = colors.bg },
+		MiniClueSeparator = { fg = colors.bg, bg = colors.bg },
+		MiniClueTitle = { fg = colors.fg, bg = colors.bg },
+		MiniClueDescGroup = { fg = colors.fg, bg = colors.bg },
+		MiniClueDescSingle = { fg = colors.bg, bg = colors.bg },
+		MiniClueNextKey = { fg = colors.fg, bg = colors.bg },
+		MiniClueNextKeyWithPostkeys = { fg = colors.fg, bg = colors.bg },
 	}
 
 	for group_name, config in pairs(highlight_groups) do
