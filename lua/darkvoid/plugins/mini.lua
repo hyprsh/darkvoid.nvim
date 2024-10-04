@@ -12,6 +12,9 @@ M.setup = function()
 		MiniStatuslineDevinfo = { fg = colors.type, bg = "NONE" },
 		MiniStatuslineFilename = { fg = colors.bracket, bg = "NONE" },
 		MiniStatuslineFileinfo = { fg = colors.bool, bg = "NONE" },
+		MiniNotifyBorder = { fg = colors.border, bg = "NONE" },
+		MiniNotifyNormal = { fg = colors.fg, bg = colors.bg },
+		MiniNotifyTitle = { fg = colors.fg, bg = "NONE" },
 	}
 
 	for group_name, config in pairs(highlight_groups) do
