@@ -19,7 +19,7 @@ M.setup = function()
 		MiniClueSeparator = { fg = colors.bg, bg = colors.bg },
 		MiniClueTitle = { fg = colors.fg, bg = colors.bg },
 		MiniClueDescGroup = { fg = colors.fg, bg = colors.bg },
-		MiniClueDescSingle = { fg = colors.bg, bg = colors.bg },
+		MiniClueDescSingle = { fg = colors.fg, bg = colors.bg },
 		MiniClueNextKey = { fg = colors.fg, bg = colors.bg },
 		MiniClueNextKeyWithPostkeys = { fg = colors.fg, bg = colors.bg },
 	}
